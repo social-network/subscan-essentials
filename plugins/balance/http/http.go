@@ -3,8 +3,8 @@ package http
 import (
 	"encoding/json"
 	"github.com/social-network/subscan-plugin/router"
-	"github.com/social-network/subscan/plugins/balance/service"
-	"github.com/social-network/subscan/util/validator"
+	"github.com/social-network/netscan/plugins/balance/service"
+	"github.com/social-network/netscan/util/validator"
 	"github.com/pkg/errors"
 	"net/http"
 )

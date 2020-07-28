@@ -3,7 +3,7 @@ package dao
 import (
 	"context"
 	"github.com/garyburd/redigo/redis"
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/util"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/social-network/subscan-plugin"
-	"github.com/social-network/subscan/plugins/balance"
+	"github.com/social-network/netscan/plugins/balance"
 	"io/ioutil"
 	"plugin"
 	"reflect"

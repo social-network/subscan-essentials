@@ -1,8 +1,7 @@
 ## Substrate Custom Type format
 
 
-Subscan custom type most cases are consistent with polkadot.js type.json, due to language characteristics, 
-there are some inconsistencies between struct and enum
+Subscan custom type most cases are consistent with polkadot.js type.json, due to language characteristics, there are some inconsistencies between struct and enum
 
 
 ### String
@@ -32,7 +31,7 @@ Example
     "type": "struct",
     "type_mapping": [
         [
-          "field1", 
+          "field1",
           "inheritTypeName"
         ]
     ]
@@ -48,7 +47,7 @@ Example
       "type": "struct",
       "type_mapping": [
         [
-          "id", 
+          "id",
           "LockIdentifier"
         ]
       ]
@@ -68,7 +67,7 @@ Example
     "type": "enum",
     "type_mapping": [
         [
-          "field1", 
+          "field1",
           "inheritTypeName"
         ]
     ]

@@ -1,8 +1,8 @@
 package ss58
 
 import (
-	"github.com/social-network/subscan/util"
-	"github.com/social-network/subscan/util/base58"
+	"github.com/social-network/netscan/util"
+	"github.com/social-network/netscan/util/base58"
 	"golang.org/x/crypto/blake2b"
 )
 

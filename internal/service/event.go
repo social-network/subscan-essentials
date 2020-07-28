@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 	"fmt"
-	"github.com/social-network/subscan/internal/dao"
-	"github.com/social-network/subscan/model"
-	"github.com/social-network/subscan/plugins"
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/internal/dao"
+	"github.com/social-network/netscan/model"
+	"github.com/social-network/netscan/plugins"
+	"github.com/social-network/netscan/util"
 	"github.com/shopspring/decimal"
 	"strings"
 )

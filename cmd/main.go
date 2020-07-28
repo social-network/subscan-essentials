@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"github.com/go-kratos/kratos/pkg/conf/paladin"
 	"github.com/go-kratos/kratos/pkg/log"
-	"github.com/social-network/subscan/internal/daemons"
-	"github.com/social-network/subscan/internal/script"
-	"github.com/social-network/subscan/internal/server/http"
-	"github.com/social-network/subscan/internal/service"
+	"github.com/social-network/netscan/internal/daemons"
+	"github.com/social-network/netscan/internal/script"
+	"github.com/social-network/netscan/internal/server/http"
+	"github.com/social-network/netscan/internal/service"
 	"github.com/social-network/substrate-api-rpc/websocket"
 	"github.com/urfave/cli"
 	"os"
@@ -31,11 +31,11 @@ func main() {
 
 func setupApp() *cli.App {
 	app := cli.NewApp()
-	app.Name = "SubScan"
-	app.Usage = "SubScan Backend Service, use -h get help"
+	app.Name = "Netscan"
+	app.Usage = "Netscan blockchain indexing service, use -h get help"
 	app.Version = "1.0"
 	app.Action = func(*cli.Context) error { run(); return nil }
-	app.Description = "SubScan Backend Service, substrate blockchain explorer"
+	app.Description = "Netscan is an data harvester for the substrate based blockchains"
 	app.Flags = []cli.Flag{cli.StringFlag{Name: "conf", Value: "../configs"}}
 	app.Before = func(context *cli.Context) error {
 		if client, err := paladin.NewFile(context.String("conf")); err != nil {
@@ -89,7 +89,7 @@ func run() {
 			}
 			cancel()
 			serviceService.Close()
-			log.Info("SubScan End exit")
+			log.Info("netscan end exit")
 			time.Sleep(time.Second)
 			return
 		case syscall.SIGHUP:

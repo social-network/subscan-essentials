@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/util"
 	"github.com/social-network/substrate-api-rpc/rpc"
 	"github.com/social-network/substrate-api-rpc/websocket"
 	"sync"

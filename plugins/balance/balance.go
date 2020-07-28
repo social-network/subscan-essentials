@@ -3,9 +3,9 @@ package balance
 import (
 	"github.com/social-network/subscan-plugin/router"
 	"github.com/social-network/subscan-plugin/storage"
-	"github.com/social-network/subscan/plugins/balance/http"
-	"github.com/social-network/subscan/plugins/balance/model"
-	"github.com/social-network/subscan/plugins/balance/service"
+	"github.com/social-network/netscan/plugins/balance/http"
+	"github.com/social-network/netscan/plugins/balance/model"
+	"github.com/social-network/netscan/plugins/balance/service"
 	"github.com/shopspring/decimal"
 )
 
@@ -43,7 +43,7 @@ func (a *Account) Version() string {
 
 func (a *Account) Migrate() {
 	db := a.d.DB()
-	db.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate(
+	db.AutoMigrate(
 		&model.Account{},
 	)
 	db.Model(model.Account{}).AddUniqueIndex("address", "address")

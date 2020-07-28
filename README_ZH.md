@@ -1,8 +1,8 @@
 # Subscan Essentials
 
 ![License: GPL](https://img.shields.io/badge/license-GPL-blue.svg)
-[![Go Report Card](https://goreportcard.com/badge/github.com/social-network/subscan)](https://goreportcard.com/report/github.com/social-network/subscan)
-![subscan](https://github.com/social-network/subscan/workflows/subscan/badge.svg)
+[![Go Report Card](https://goreportcard.com/badge/github.com/social-network/netscan)](https://goreportcard.com/report/github.com/social-network/netscan)
+![subscan](https://github.com/social-network/netscan/workflows/subscan/badge.svg)
 
 Subscan Essentials是一个高精度的区块链浏览器脚手架项目，它具有开发人员友好的界面和自定义模块解析功能，支持基于substrate的区块链网络。 它由Subscan团队开发，并在subscan.io中使用。
 开发人员可以自由使用代码库来扩展功能并为其受众开发独特的用户体验。

@@ -1,7 +1,7 @@
 package daemons_test
 
 import (
-	"github.com/social-network/subscan/internal/daemons"
+	"github.com/social-network/netscan/internal/daemons"
 	"github.com/sevlyar/go-daemon"
 	"testing"
 )

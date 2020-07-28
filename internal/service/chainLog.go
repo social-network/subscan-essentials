@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 	"fmt"
-	"github.com/social-network/subscan/internal/dao"
-	"github.com/social-network/subscan/model"
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/internal/dao"
+	"github.com/social-network/netscan/model"
+	"github.com/social-network/netscan/util"
 	"github.com/social-network/substrate-api-rpc"
 	"github.com/social-network/substrate-api-rpc/rpc"
 	"github.com/social-network/substrate-api-rpc/storage"

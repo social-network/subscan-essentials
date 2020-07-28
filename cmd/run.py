@@ -16,13 +16,13 @@ def observer_status():
 
 
 def system_do(op):
-    os.system('../target/subscan -conf ../configs start ' + op)
+    os.system('../target/netscan -conf ../configs start ' + op)
 
 
 def main():
     op = []
     if len(sys.argv) == 1:
-        os.system('./subscan -conf ../configs')
+        os.system('./netscan -conf ../configs')
     elif sys.argv[1] == "substrate":
         op = ["substrate"]
     map(system_do, op)  # run,run,run
@@ -33,7 +33,7 @@ def main():
         for i in range(len(op)):
             try:
                 if not j["data"][op[i]]:
-                    s = './subscan stop {observer} && ./subscan start {observer}'
+                    s = './netscan stop {observer} && ./netscan start {observer}'
                     os.system(s.format(observer=op[i]))
             except KeyError:
                 pass

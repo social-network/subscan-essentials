@@ -2,7 +2,7 @@ package service
 
 import (
 	"github.com/social-network/scale.go/types"
-	"github.com/social-network/subscan/model"
+	"github.com/social-network/netscan/model"
 	"github.com/social-network/substrate-api-rpc/metadata"
 	"github.com/social-network/substrate-api-rpc/rpc"
 	"strings"

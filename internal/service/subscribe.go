@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/social-network/subscan/pkg/recws"
+	"github.com/social-network/netscan/pkg/recws"
 	"github.com/social-network/substrate-api-rpc/rpc"
 	"github.com/social-network/substrate-api-rpc/storageKey"
 	"os"
@@ -11,7 +11,7 @@ import (
 
 	"github.com/go-kratos/kratos/pkg/log"
 	"github.com/gorilla/websocket"
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/util"
 )
 
 var (

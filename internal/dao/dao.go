@@ -46,10 +46,10 @@ func checkErr(err error) {
 // New new a dao and return.
 func New() (dao *Dao) {
 	var (
-		dc mysqlConf
+		dc postgresConf
 		rc redisConf
 	)
-	checkErr(paladin.Get("mysql.toml").UnmarshalTOML(&dc))
+	checkErr(paladin.Get("postgres.toml").UnmarshalTOML(&dc))
 	checkErr(paladin.Get("redis.toml").UnmarshalTOML(&rc))
 	dc.mergeEnvironment()
 	rc.mergeEnvironment()

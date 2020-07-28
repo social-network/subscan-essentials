@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"github.com/go-kratos/kratos/pkg/cache/redis"
 	"github.com/go-kratos/kratos/pkg/database/sql"
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/util"
 )
 
 type (
-	mysqlConf struct {
+	postgresConf struct {
 		Conf struct {
 			Host string
 			User string
@@ -25,13 +25,13 @@ type (
 	}
 )
 
-func (dc *mysqlConf) mergeEnvironment() {
-	dbHost := util.GetEnv("MYSQL_HOST", dc.Conf.Host)
-	dbUser := util.GetEnv("MYSQL_USER", dc.Conf.User)
-	dbPass := util.GetEnv("MYSQL_PASS", dc.Conf.Pass)
-	dbName := util.GetEnv("MYSQL_DB", dc.Conf.DB)
-	dc.Api.DSN = fmt.Sprintf("%s:%s@tcp(%s)/%s", dbUser, dbPass, dbHost, dbName) + dc.Api.DSN
-	dc.Task.DSN = fmt.Sprintf("%s:%s@tcp(%s)/%s", dbUser, dbPass, dbHost, dbName) + dc.Task.DSN
+func (dc *postgresConf) mergeEnvironment() {
+	dbHost := util.GetEnv("POSTGRES_HOST", dc.Conf.Host)
+	dbUser := util.GetEnv("POSTGRES_USER", dc.Conf.User)
+	dbPass := util.GetEnv("POSTGRES_PASS", dc.Conf.Pass)
+	dbName := util.GetEnv("POSTGRES_DB", dc.Conf.DB)
+	dc.Api.DSN = fmt.Sprintf("postgres://%s:%s@%s/%s?sslmode=disable", dbUser, dbPass, dbHost, dbName)
+	dc.Task.DSN = fmt.Sprintf("postgres://%s:%s@%s/%s?sslmode=disable", dbUser, dbPass, dbHost, dbName)
 }
 
 func (rc *redisConf) mergeEnvironment() {

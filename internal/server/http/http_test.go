@@ -1,7 +1,7 @@
 package http
 
 import (
-	"github.com/social-network/subscan/internal/service"
+	"github.com/social-network/netscan/internal/service"
 	"io"
 	"net/http"
 	"net/http/httptest"

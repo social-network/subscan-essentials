@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"github.com/go-kratos/kratos/pkg/cache/redis"
 	"github.com/go-kratos/kratos/pkg/conf/paladin"
-	"github.com/social-network/subscan/model"
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/model"
+	"github.com/social-network/netscan/util"
 	"github.com/jinzhu/gorm"
 )
 
@@ -101,13 +101,13 @@ func init() {
 		paladin.DefaultClient = client
 	}
 	var (
-		dc mysqlConf
+		dc postgresConf
 		rc redisConf
 	)
-	checkErr(paladin.Get("mysql.toml").UnmarshalTOML(&dc))
+	checkErr(paladin.Get("postgres.toml").UnmarshalTOML(&dc))
 	checkErr(paladin.Get("redis.toml").UnmarshalTOML(&rc))
 
-	db, err := gorm.Open("mysql", dc.Test.DSN)
+	db, err := gorm.Open("postgres", dc.Test.DSN)
 	if err != nil {
 		panic(err)
 	}

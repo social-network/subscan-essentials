@@ -5,8 +5,8 @@ import (
 	"fmt"
 	bm "github.com/go-kratos/kratos/pkg/net/http/blademaster"
 	"github.com/go-kratos/kratos/pkg/net/http/blademaster/binding"
-	"github.com/social-network/subscan/util"
-	"github.com/social-network/subscan/util/ss58"
+	"github.com/social-network/netscan/util"
+	"github.com/social-network/netscan/util/ss58"
 )
 
 func metadata(c *bm.Context) {

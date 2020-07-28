@@ -1,7 +1,7 @@
 package dao
 
 import (
-	"github.com/social-network/subscan/model"
+	"github.com/social-network/netscan/model"
 	"github.com/social-network/substrate-api-rpc/metadata"
 )
 

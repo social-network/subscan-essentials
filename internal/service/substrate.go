@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/go-kratos/kratos/pkg/log"
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/util"
 	"github.com/social-network/substrate-api-rpc/rpc"
 	"github.com/social-network/substrate-api-rpc/websocket"
 	"github.com/panjf2000/ants/v2"

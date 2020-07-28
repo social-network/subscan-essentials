@@ -3,8 +3,8 @@ package dao
 import (
 	"context"
 	"fmt"
-	"github.com/social-network/subscan/model"
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/model"
+	"github.com/social-network/netscan/util"
 	"strings"
 )
 

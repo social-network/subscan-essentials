@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/go-kratos/kratos/pkg/log"
-	"github.com/go-sql-driver/mysql"
-	"github.com/social-network/subscan/util"
+	"github.com/lib/pq"
+	"github.com/social-network/netscan/util"
 	"github.com/jinzhu/gorm"
 )
 
@@ -59,14 +59,14 @@ func (d *Dao) DbBegin() *GormDB {
 }
 
 // private funcs
-func newDb(dc mysqlConf) (db *gorm.DB) {
+func newDb(dc postgresConf) (db *gorm.DB) {
 	var err error
 	if os.Getenv("TASK_MOD") == "true" {
-		db, err = gorm.Open("mysql", dc.Task.DSN)
+		db, err = gorm.Open("postgres", dc.Task.DSN)
 	} else if os.Getenv("TEST_MOD") == "true" {
-		db, err = gorm.Open("mysql", dc.Test.DSN)
+		db, err = gorm.Open("postgres", dc.Test.DSN)
 	} else {
-		db, err = gorm.Open("mysql", dc.Api.DSN)
+		db, err = gorm.Open("postgres", dc.Api.DSN)
 	}
 	if err != nil {
 		panic(err)
@@ -84,7 +84,7 @@ func newDb(dc mysqlConf) (db *gorm.DB) {
 }
 
 func (d *Dao) checkDBError(err error) error {
-	if err == mysql.ErrInvalidConn || err == driver.ErrBadConn {
+	if err == err.(*pq.Error) || err == driver.ErrBadConn {
 		return err
 	}
 	return nil

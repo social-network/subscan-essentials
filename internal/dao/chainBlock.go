@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 	"github.com/go-kratos/kratos/pkg/cache/redis"
-	"github.com/social-network/subscan/model"
-	"github.com/social-network/subscan/util/address"
+	"github.com/social-network/netscan/model"
+	"github.com/social-network/netscan/util/address"
 	"sort"
 )
 
-// CreateBlock, mysql db transaction
+// CreateBlock, postgres db transaction
 // Check if you need to create a new table(block, extrinsic, event, log ) after created
 func (d *Dao) CreateBlock(txn *GormDB, cb *model.ChainBlock) (err error) {
 	query := txn.Create(&cb)

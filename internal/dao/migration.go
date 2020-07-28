@@ -2,13 +2,13 @@ package dao
 
 import (
 	"context"
-	"github.com/social-network/subscan/model"
+	"github.com/social-network/netscan/model"
 )
 
 func (d *Dao) Migration() {
 	db := d.db
 	d.splitTableMigrate()
-	db.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate(
+	db.AutoMigrate(
 		&model.RuntimeVersion{},
 	)
 	db.Model(model.RuntimeVersion{}).AddUniqueIndex("spec_version", "spec_version")
@@ -32,7 +32,7 @@ func (d *Dao) blockMigrate(blockNum int) {
 	logModel := model.ChainLog{BlockNum: blockNum}
 
 	db := d.db
-	db.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate(
+	db.AutoMigrate(
 		blockModel,
 		&eventModel,
 		&extrinsicModel,

@@ -3,9 +3,9 @@ package http
 import (
 	"github.com/go-kratos/kratos/pkg/conf/paladin"
 	bm "github.com/go-kratos/kratos/pkg/net/http/blademaster"
-	"github.com/social-network/subscan/internal/middleware"
-	"github.com/social-network/subscan/internal/service"
-	"github.com/social-network/subscan/plugins"
+	"github.com/social-network/netscan/internal/middleware"
+	"github.com/social-network/netscan/internal/service"
+	"github.com/social-network/netscan/plugins"
 )
 
 var (

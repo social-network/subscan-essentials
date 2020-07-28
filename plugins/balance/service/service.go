@@ -2,8 +2,8 @@ package service
 
 import (
 	"github.com/social-network/subscan-plugin/storage"
-	"github.com/social-network/subscan/plugins/balance/dao"
-	"github.com/social-network/subscan/plugins/balance/model"
+	"github.com/social-network/netscan/plugins/balance/dao"
+	"github.com/social-network/netscan/plugins/balance/model"
 )
 
 type Service struct {

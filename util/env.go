@@ -10,8 +10,8 @@ var (
 	AddressType               = GetEnv("SUBSTRATE_ADDRESS_TYPE", "2")
 	BalanceAccuracy           = GetEnv("SUBSTRATE_ACCURACY", "9")
 	CommissionAccuracy        = GetEnv("COMMISSION_ACCURACY", "9")
-	WSEndPoint                = GetEnv("CHAIN_WS_ENDPOINT", "wss://crab.darwinia.network")
-	NetworkNode               = GetEnv("NETWORK_NODE", "")
+	WSEndPoint                = GetEnv("CHAIN_WS_ENDPOINT", "wss://the.chi.network")
+	NetworkNode               = GetEnv("NETWORK_NODE", "substrate")
 )
 
 func GetEnv(key, defaultValue string) string {

@@ -3,7 +3,7 @@ package plugins_test
 import (
 	"github.com/social-network/subscan-plugin/router"
 	"github.com/social-network/subscan-plugin/storage"
-	"github.com/social-network/subscan/plugins"
+	"github.com/social-network/netscan/plugins"
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"
 	"testing"

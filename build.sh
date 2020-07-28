@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-BASENAME="subscan"
+BASENAME="netscan"
 app=${BASENAME}
 
 function build() {
-    go build -o ./cmd/subscan -v ./cmd
+    go build -o ./cmd/netscan -v ./cmd
 	echo "build success"
 }
 

@@ -1,7 +1,7 @@
 package model_test
 
 import (
-	"github.com/social-network/subscan/model"
+	"github.com/social-network/netscan/model"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

@@ -19,7 +19,7 @@ type ChainBlock struct {
 	StateRoot       string `sql:"default: null;size:100" json:"state_root"`
 	ExtrinsicsRoot  string `sql:"default: null;size:100" json:"extrinsics_root"`
 	Logs            string `json:"logs" sql:"type:text;"`
-	Extrinsics      string `json:"extrinsics" sql:"type:MEDIUMTEXT;"`
+	Extrinsics      string `json:"extrinsics" sql:"type:text;"`
 	EventCount      int    `json:"event_count"`
 	ExtrinsicsCount int    `json:"extrinsics_count"`
 	Event           string `json:"event" sql:"type:text;"`
@@ -91,7 +91,7 @@ type ChainExtrinsic struct {
 	CallCode           string          `json:"call_code"`
 	CallModuleFunction string          `json:"call_module_function"  sql:"size:100"`
 	CallModule         string          `json:"call_module"  sql:"size:100"`
-	Params             interface{}     `json:"params" sql:"type:MEDIUMTEXT;" `
+	Params             interface{}     `json:"params" sql:"type:text;" `
 	AccountId          string          `json:"account_id"`
 	Signature          string          `json:"signature"`
 	Nonce              int             `json:"nonce"`
@@ -133,7 +133,7 @@ type RuntimeVersion struct {
 	Name        string `json:"-"`
 	SpecVersion int    `json:"spec_version"`
 	Modules     string `json:"modules"`
-	RawData     string `json:"-" sql:"type:MEDIUMTEXT;"`
+	RawData     string `json:"-" sql:"type:text;"`
 }
 
 type ChainLog struct {

@@ -1,9 +1,10 @@
 .idea
 .mypy_cache
 cmd/cmd
-cmd/subscan
+cmd/netscan
 configs/http.toml
 configs/mysql.toml
+configs/postgres.toml
 configs/redis.toml
 log/*
 node_modules

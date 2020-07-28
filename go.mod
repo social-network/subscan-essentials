@@ -1,17 +1,14 @@
-module github.com/social-network/subscan
+module github.com/social-network/netscan
 
 go 1.12
 
 require (
 	github.com/garyburd/redigo v1.6.0
 	github.com/go-kratos/kratos v0.5.0
-	github.com/go-sql-driver/mysql v1.5.0
+	github.com/lib/pq v1.8.0
 	github.com/golang/protobuf v1.3.5
 	github.com/gorilla/websocket v1.4.2
 	github.com/huandu/xstrings v1.3.2
-	github.com/social-network/scale.go v0.1.4
-	github.com/social-network/subscan-plugin v0.0.1
-	github.com/social-network/substrate-api-rpc v0.0.1
 	github.com/jinzhu/gorm v1.9.14
 	github.com/jpillora/backoff v1.0.0
 	github.com/json-iterator/go v1.1.9
@@ -22,8 +19,12 @@ require (
 	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
 	github.com/panjf2000/ants/v2 v2.4.0
 	github.com/pkg/errors v0.9.1
+	github.com/prometheus/common v0.10.0 // indirect
 	github.com/sevlyar/go-daemon v0.1.5
 	github.com/shopspring/decimal v1.2.0
+	github.com/social-network/scale.go v0.3.0
+	github.com/social-network/subscan-plugin v0.3.0
+	github.com/social-network/substrate-api-rpc v0.3.0
 	github.com/stretchr/testify v1.6.1
 	github.com/urfave/cli v1.20.0
 	golang.org/x/crypto v0.0.0-20200709230013-948cd5f35899

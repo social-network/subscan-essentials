@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/util"
 )
 
 // Ping ping the resource.

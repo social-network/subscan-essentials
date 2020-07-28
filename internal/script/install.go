@@ -3,7 +3,7 @@ package script
 import (
 	"database/sql"
 	"fmt"
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/util"
 	"io"
 	"os"
 )
@@ -11,18 +11,19 @@ import (
 func Install(conf string) {
 	// create database
 	func() {
-		dbHost := util.GetEnv("MYSQL_HOST", "127.0.0.1")
-		dbUser := util.GetEnv("MYSQL_USER", "root")
-		dbPass := util.GetEnv("MYSQL_PASS", "")
-		dsn := fmt.Sprintf("%s:%s@tcp(%s)/%s", dbUser, dbPass, dbHost, "")
-		db, err := sql.Open("mysql", dsn)
+		dbHost := util.GetEnv("POSTGRES_HOST", "127.0.0.1")
+		dbUser := util.GetEnv("POSTGRES_USER", "everhusk")
+		dbPass := util.GetEnv("POSTGRES_PASS", "")
+		dbName := util.GetEnv("POSTGRES_DB", "substrate")
+		dsn := fmt.Sprintf("postgres://%s:%s@%s/%s?sslmode=disable", dbUser, dbPass, dbHost, dbName)
+		db, err := sql.Open("postgres", dsn)
 		if err != nil {
 			panic(err)
 		}
 		defer func() {
 			_ = db.Close()
 		}()
-		q := fmt.Sprintf("CREATE DATABASE IF NOT EXISTS %s DEFAULT CHARACTER SET = `utf8mb4`", util.NetworkNode)
+		q := fmt.Sprintf("SELECT 'CREATE DATABASE %s WITH ENCODING = `UTF8`' WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = '%s')", util.NetworkNode, util.NetworkNode)
 		_, err = db.Exec(q)
 		if err != nil {
 			panic(err)
@@ -33,7 +34,7 @@ func Install(conf string) {
 
 	// conf
 	_ = fileCopy(fmt.Sprintf("%s/http.toml.example", conf), fmt.Sprintf("%s/http.toml", conf))
-	_ = fileCopy(fmt.Sprintf("%s/mysql.toml.example", conf), fmt.Sprintf("%s/mysql.toml", conf))
+	_ = fileCopy(fmt.Sprintf("%s/postgres.toml.example", conf), fmt.Sprintf("%s/postgres.toml", conf))
 	_ = fileCopy(fmt.Sprintf("%s/redis.toml.example", conf), fmt.Sprintf("%s/redis.toml", conf))
 
 }

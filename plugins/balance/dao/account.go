@@ -2,7 +2,7 @@ package dao
 
 import (
 	"fmt"
-	"github.com/social-network/subscan/plugins/balance/model"
+	"github.com/social-network/netscan/plugins/balance/model"
 	"github.com/jinzhu/gorm"
 )
 

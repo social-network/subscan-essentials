@@ -2,14 +2,14 @@ package daemons
 
 import (
 	"fmt"
-	"github.com/social-network/subscan/internal/dao"
+	"github.com/social-network/netscan/internal/dao"
 	"log"
 	"os"
 	"syscall"
 	"time"
 
-	"github.com/social-network/subscan/internal/service"
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/internal/service"
+	"github.com/social-network/netscan/util"
 	"github.com/sevlyar/go-daemon"
 )
 

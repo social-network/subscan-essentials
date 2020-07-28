@@ -1,8 +1,8 @@
 package transaction_test
 
 import (
-	"github.com/social-network/subscan/internal/service/transaction"
-	"github.com/social-network/subscan/util"
+	"github.com/social-network/netscan/internal/service/transaction"
+	"github.com/social-network/netscan/util"
 	"github.com/social-network/substrate-api-rpc/websocket"
 	"github.com/stretchr/testify/assert"
 	"testing"
