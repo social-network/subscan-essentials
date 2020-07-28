@@ -2,8 +2,8 @@ package dao
 
 import (
 	"context"
-	"github.com/itering/subscan/model"
-	"github.com/itering/substrate-api-rpc/metadata"
+	"github.com/social-network/subscan/model"
+	"github.com/social-network/substrate-api-rpc/metadata"
 )
 
 type IDao interface {

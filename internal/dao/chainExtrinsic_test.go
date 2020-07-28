@@ -3,7 +3,7 @@ package dao
 import (
 	"context"
 	"encoding/json"
-	"github.com/itering/subscan/model"
+	"github.com/social-network/subscan/model"
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"
 	"testing"

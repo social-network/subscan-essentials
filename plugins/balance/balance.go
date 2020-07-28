@@ -1,11 +1,11 @@
 package balance
 
 import (
-	"github.com/itering/subscan-plugin/router"
-	"github.com/itering/subscan-plugin/storage"
-	"github.com/itering/subscan/plugins/balance/http"
-	"github.com/itering/subscan/plugins/balance/model"
-	"github.com/itering/subscan/plugins/balance/service"
+	"github.com/social-network/subscan-plugin/router"
+	"github.com/social-network/subscan-plugin/storage"
+	"github.com/social-network/subscan/plugins/balance/http"
+	"github.com/social-network/subscan/plugins/balance/model"
+	"github.com/social-network/subscan/plugins/balance/service"
 	"github.com/shopspring/decimal"
 )
 

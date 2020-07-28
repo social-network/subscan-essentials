@@ -3,7 +3,7 @@ package dao
 import (
 	"context"
 	"fmt"
-	"github.com/itering/subscan/util"
+	"github.com/social-network/subscan/util"
 	"github.com/stretchr/testify/assert"
 	"testing"
 	"time"

@@ -2,9 +2,9 @@ package http
 
 import (
 	"encoding/json"
-	"github.com/itering/subscan-plugin/router"
-	"github.com/itering/subscan/plugins/balance/service"
-	"github.com/itering/subscan/util/validator"
+	"github.com/social-network/subscan-plugin/router"
+	"github.com/social-network/subscan/plugins/balance/service"
+	"github.com/social-network/subscan/util/validator"
 	"github.com/pkg/errors"
 	"net/http"
 )

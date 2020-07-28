@@ -6,12 +6,14 @@ services:
     init: true
     build: .
     environment:
-      MYSQL_HOST: mysql-subscan
-      MYSQL_PASS: 'helloload'
-      MYSQL_DB: 'subscan'
+      MYSQL_HOST: subscan-test-do-user-7480810-0.a.db.ondigitalocean.com
+      MYSQL_PASS: 'dnbd7o87itz9thmy'
+      MYSQL_DB: 'defaultdb'
+      MYSQL_PORT: '25060'
+      MYSQL_USER: 'doadmin'
       REDIS_ADDR: redis:6379
-      CHAIN_WS_ENDPOINT: 'wss://crab.darwinia.network'
-      NETWORK_NODE: 'crab'
+      CHAIN_WS_ENDPOINT: 'wss://the.chi.network'
+      NETWORK_NODE: 'chi'
       WEB_HOST: 'http://subscan-api:4399'
     ports:
       - '4399:4399'

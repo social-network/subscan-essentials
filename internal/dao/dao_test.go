@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"github.com/go-kratos/kratos/pkg/cache/redis"
 	"github.com/go-kratos/kratos/pkg/conf/paladin"
-	"github.com/itering/subscan/model"
-	"github.com/itering/subscan/util"
+	"github.com/social-network/subscan/model"
+	"github.com/social-network/subscan/util"
 	"github.com/jinzhu/gorm"
 )
 

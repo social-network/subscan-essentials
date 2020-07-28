@@ -1,9 +1,9 @@
 package plugins_test
 
 import (
-	"github.com/itering/subscan-plugin/router"
-	"github.com/itering/subscan-plugin/storage"
-	"github.com/itering/subscan/plugins"
+	"github.com/social-network/subscan-plugin/router"
+	"github.com/social-network/subscan-plugin/storage"
+	"github.com/social-network/subscan/plugins"
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"
 	"testing"

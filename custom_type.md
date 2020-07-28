@@ -96,4 +96,4 @@ Example
 
 ### Resource
 
-[scale.go] https://github.com/itering/scale.go/tree/master/source
+[scale.go] https://github.com/social-network/scale.go/tree/master/source

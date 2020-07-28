@@ -2,7 +2,7 @@ package dao
 
 import (
 	"context"
-	"github.com/itering/substrate-api-rpc/websocket"
+	"github.com/social-network/substrate-api-rpc/websocket"
 
 	"github.com/go-kratos/kratos/pkg/cache/redis"
 	"github.com/go-kratos/kratos/pkg/conf/paladin"

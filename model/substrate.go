@@ -3,7 +3,7 @@ package model
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/itering/subscan-plugin/storage"
+	"github.com/social-network/subscan-plugin/storage"
 	"github.com/shopspring/decimal"
 )
 

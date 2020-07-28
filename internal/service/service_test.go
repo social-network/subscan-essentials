@@ -2,11 +2,11 @@ package service
 
 import (
 	"context"
-	"github.com/itering/subscan/internal/dao"
-	"github.com/itering/subscan/model"
-	"github.com/itering/subscan/util"
-	"github.com/itering/substrate-api-rpc/metadata"
-	"github.com/itering/substrate-api-rpc/websocket"
+	"github.com/social-network/subscan/internal/dao"
+	"github.com/social-network/subscan/model"
+	"github.com/social-network/subscan/util"
+	"github.com/social-network/substrate-api-rpc/metadata"
+	"github.com/social-network/substrate-api-rpc/websocket"
 )
 
 var testSrv Service

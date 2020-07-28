@@ -3,8 +3,8 @@ package dao
 import (
 	"context"
 	"fmt"
-	"github.com/itering/subscan/model"
-	"github.com/itering/subscan/util"
+	"github.com/social-network/subscan/model"
+	"github.com/social-network/subscan/util"
 	"strings"
 )
 

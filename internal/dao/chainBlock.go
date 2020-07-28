@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 	"github.com/go-kratos/kratos/pkg/cache/redis"
-	"github.com/itering/subscan/model"
-	"github.com/itering/subscan/util/address"
+	"github.com/social-network/subscan/model"
+	"github.com/social-network/subscan/util/address"
 	"sort"
 )
 

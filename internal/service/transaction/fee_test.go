@@ -1,9 +1,9 @@
 package transaction_test
 
 import (
-	"github.com/itering/subscan/internal/service/transaction"
-	"github.com/itering/subscan/util"
-	"github.com/itering/substrate-api-rpc/websocket"
+	"github.com/social-network/subscan/internal/service/transaction"
+	"github.com/social-network/subscan/util"
+	"github.com/social-network/substrate-api-rpc/websocket"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

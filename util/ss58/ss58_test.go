@@ -1,7 +1,7 @@
 package ss58_test
 
 import (
-	"github.com/itering/subscan/util/ss58"
+	"github.com/social-network/subscan/util/ss58"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

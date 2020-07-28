@@ -1,7 +1,7 @@
 package address
 
 import (
-	"github.com/itering/subscan/util"
+	"github.com/social-network/subscan/util"
 	"github.com/stretchr/testify/assert"
 	"strconv"
 	"testing"

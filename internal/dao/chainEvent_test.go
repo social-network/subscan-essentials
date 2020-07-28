@@ -2,7 +2,7 @@ package dao
 
 import (
 	"context"
-	"github.com/itering/subscan/model"
+	"github.com/social-network/subscan/model"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

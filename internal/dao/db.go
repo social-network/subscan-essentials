@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-kratos/kratos/pkg/log"
 	"github.com/go-sql-driver/mysql"
-	"github.com/itering/subscan/util"
+	"github.com/social-network/subscan/util"
 	"github.com/jinzhu/gorm"
 )
 

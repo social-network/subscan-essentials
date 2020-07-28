@@ -3,7 +3,7 @@ package script
 import (
 	"database/sql"
 	"fmt"
-	"github.com/itering/subscan/util"
+	"github.com/social-network/subscan/util"
 	"io"
 	"os"
 )

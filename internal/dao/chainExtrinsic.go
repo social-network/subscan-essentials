@@ -3,9 +3,9 @@ package dao
 import (
 	"context"
 	"encoding/json"
-	"github.com/itering/subscan/model"
-	"github.com/itering/subscan/util"
-	"github.com/itering/subscan/util/address"
+	"github.com/social-network/subscan/model"
+	"github.com/social-network/subscan/util"
+	"github.com/social-network/subscan/util/address"
 	"strings"
 )
 

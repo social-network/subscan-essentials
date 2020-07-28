@@ -5,14 +5,14 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/go-kratos/kratos/pkg/log"
-	"github.com/itering/scale.go/types"
-	"github.com/itering/subscan/model"
-	"github.com/itering/subscan/util"
-	"github.com/itering/subscan/util/address"
-	"github.com/itering/substrate-api-rpc"
-	"github.com/itering/substrate-api-rpc/metadata"
-	"github.com/itering/substrate-api-rpc/rpc"
-	"github.com/itering/substrate-api-rpc/storage"
+	"github.com/social-network/scale.go/types"
+	"github.com/social-network/subscan/model"
+	"github.com/social-network/subscan/util"
+	"github.com/social-network/subscan/util/address"
+	"github.com/social-network/substrate-api-rpc"
+	"github.com/social-network/substrate-api-rpc/metadata"
+	"github.com/social-network/substrate-api-rpc/rpc"
+	"github.com/social-network/substrate-api-rpc/storage"
 )
 
 func (s *Service) CreateChainBlock(hash string, block *rpc.Block, event string, spec int, finalized bool) (err error) {

@@ -1,9 +1,9 @@
 package service
 
 import (
-	"github.com/itering/subscan/util"
-	"github.com/itering/substrate-api-rpc/rpc"
-	"github.com/itering/substrate-api-rpc/websocket"
+	"github.com/social-network/subscan/util"
+	"github.com/social-network/substrate-api-rpc/rpc"
+	"github.com/social-network/substrate-api-rpc/websocket"
 	"sync"
 )
 

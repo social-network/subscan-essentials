@@ -3,8 +3,8 @@ package plugins
 import (
 	"flag"
 	"fmt"
-	"github.com/itering/subscan-plugin"
-	"github.com/itering/subscan/plugins/balance"
+	"github.com/social-network/subscan-plugin"
+	"github.com/social-network/subscan/plugins/balance"
 	"io/ioutil"
 	"plugin"
 	"reflect"
